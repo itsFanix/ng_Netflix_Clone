@@ -1,0 +1,109 @@
+<ion-content>
+
+
+  <ion-grid>
+
+    <!-- first row section  -->
+    <ion-row class=" firstSection ion-align-items-center ion-justify-content-center">
+      <ion-col size="12" size-md="8">
+
+        <ion-text>
+          <h1 class="ion-margin-top ion-padding-top">
+            Film, séries TV et bienplus en illimité
+          </h1>
+          <p class="large">
+            Où que vous soyez. Annulez à tout moment.
+          </p>
+          <p>
+            Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement
+          </p>
+        </ion-text>
+
+        <ion-item>
+          <ion-input placeholder="Adresse e-mail"></ion-input>
+          <ion-button size="large" routerLink="/movies" slot="end">
+            Commencer
+            <ion-icon slot="end" size="small" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+
+    <!-- Second row section  -->
+    <ion-row>
+      <ion-col size-xs="12" size-md="6">
+        <ion-text>
+          <p>
+            Regardez Netflix sur votre TV
+          </p>
+          <p>
+            Regarder Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, Lecteurs Blu-ray et bien plus.
+          </p>
+        </ion-text>
+      </ion-col>
+      <ion-col size-xs="12" size-md="6">
+        <div class="video-image-tv">
+          <ion-img src="../../../../assets/Images/Netflix-image-tv.png"></ion-img>
+          <video width="100%" autoplay playsinline muted loop>
+            <source src="../../../../assets/Videos/video-tv.m4v" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+
+
+      </ion-col>
+    </ion-row>
+
+    <!-- third row Section -->
+    <ion-row>
+      <ion-col size-xs="12" size-md="6">
+        <ion-img src="../../../../assets/Images/Netflix-image-mobile.jpg"></ion-img>
+
+        <ion-item lines="none" class ="item-download">
+            <ion-thumbnail slot="start">
+                <ion-img src="../../../../assets/Images/Netflix-image-boxshot.png"></ion-img>
+            </ion-thumbnail>
+            <ion-label>
+                <h3>Stranger Things</h3>
+                <p>Télechargement en cours ...</p>
+            </ion-label>
+            <ion-img slot="end" src="../../../../assets/Images/netflix-download-icon.gif"></ion-img>
+        </ion-item>
+
+      </ion-col>
+
+      <ion-col size-xs="12" size-md="6">
+        <ion-text>
+          <h2>
+            Téléchargez vos séries préférées pour les regarder hors connexion.</h2>
+          <p>
+            Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder.
+          </p>
+
+        </ion-text>
+
+      </ion-col>
+    </ion-row>
+
+    <!-- fourth row section  -->
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <!-- fifth row Section -->
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
