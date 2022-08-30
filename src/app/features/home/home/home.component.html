@@ -1,15 +1,12 @@
-<ion-content>
-
-
-  <ion-grid>
-
+<ion-content class="ion-no-padding" >
+  <ion-grid class="ion-no-padding">
     <!-- first row section  -->
-    <ion-row class=" firstSection ion-align-items-center ion-justify-content-center">
+    <ion-row [style]="'url(../../../../assets/Images/Netflix-image.jpg)'" class=" firstSection ion-text-center ion-align-items-center ion-justify-content-center">
       <ion-col size="12" size-md="8">
 
         <ion-text>
           <h1 class="ion-margin-top ion-padding-top">
-            Film, séries TV et bienplus en illimité
+            Film, séries TV et bien plus en illimité
           </h1>
           <p class="large">
             Où que vous soyez. Annulez à tout moment.
@@ -29,11 +26,12 @@
 
       </ion-col>
     </ion-row>
+    <div class="concord-img-gradient"></div>
 
     <!-- Second row section  -->
-    <ion-row>
+    <ion-row class="ion-align-items-center ion-padding">
       <ion-col size-xs="12" size-md="6">
-        <ion-text>
+        <ion-text color="light">
           <p>
             Regardez Netflix sur votre TV
           </p>
@@ -53,22 +51,22 @@
 
 
       </ion-col>
-    </ion-row>
+    </ion-row >
 
     <!-- third row Section -->
-    <ion-row>
+    <ion-row class="ion-align-items-center ion-padding">
       <ion-col size-xs="12" size-md="6">
         <ion-img src="../../../../assets/Images/Netflix-image-mobile.jpg"></ion-img>
 
-        <ion-item lines="none" class ="item-download">
-            <ion-thumbnail slot="start">
-                <ion-img src="../../../../assets/Images/Netflix-image-boxshot.png"></ion-img>
-            </ion-thumbnail>
-            <ion-label>
-                <h3>Stranger Things</h3>
-                <p>Télechargement en cours ...</p>
-            </ion-label>
-            <ion-img slot="end" src="../../../../assets/Images/netflix-download-icon.gif"></ion-img>
+        <ion-item lines="none" class="item-download">
+          <ion-thumbnail slot="start">
+            <ion-img src="../../../../assets/Images/Netflix-image-boxshot.png"></ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h3>Stranger Things</h3>
+            <p>Télechargement en cours ...</p>
+          </ion-label>
+          <ion-img slot="end" src="../../../../assets/Images/netflix-download-icon.gif"></ion-img>
         </ion-item>
 
       </ion-col>
@@ -87,22 +85,126 @@
     </ion-row>
 
     <!-- fourth row section  -->
-    <ion-row>
-      <ion-col>
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size-xs="12" size-md="6">
+
+        <ion-text>
+          <h2>
+            Où que vous soyez.
+          </h2>
+          <p>
+            Regardez des films et séries en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout
+            compris.
+          </p>
+        </ion-text>
 
       </ion-col>
-      <ion-col>
-
+      <ion-col size-xs="12" size-md="6">
+        <div class="video-image-devices">
+          <ion-img src="../../../../assets/Images/Netflix-image-tv2.png"></ion-img>
+          <video width="100%" autoplay playsinline muted loop>
+            <source src="../../../../assets/Videos/Netflix-video-devices.m4v" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
       </ion-col>
     </ion-row>
 
     <!-- fifth row Section -->
-    <ion-row>
-      <ion-col>
-
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size-xs="12" size-md="6">
+        <div class="jeunesse-image">
+          <ion-img src="../../../../assets/Images/Netflix-image-jeunesse.png"></ion-img>
+        </div>
       </ion-col>
-      <ion-col>
 
+      <ion-col size-xs="12" size-md="6">
+        <h2>Créez des profils pour les enfants</h2>
+        <p>Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à
+          eux, déjà inclus dans votre abonnement.</p>
+      </ion-col>
+    </ion-row>
+
+    <!-- sixth row Section -->
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size="12">
+        <div>
+          <ion-text>
+            <h2>Foire aux questions</h2>
+          </ion-text>
+          <ul class="faq-list">
+            <li class="faq-list-item">
+              <ion-button class="faq-question"> Netflix, qu'est-ce que c'est?</ion-button>
+            </li>
+            <li class="faq-list-item">
+              <ion-button class="faq-question">Combien Coûte Netflix ?</ion-button>
+            </li>
+            <li class="faq-list-item">
+              <ion-button class="faq-question"> Comment puis-je annuler mon forfait? </ion-button>
+            </li>
+            <li class="faq-list-item">
+              <ion-button class="faq-question">Que puis-je regarder sur Netflix ?</ion-button>
+            </li>
+            <li class="faq-list-item">
+              <ion-button class="faq-question"> Est-ce que Netflix est adapté aux enfants? </ion-button>
+            </li>
+          </ul>
+        </div>
+        <ion-text>
+          <p>Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
+        </ion-text>
+        <ion-item>
+          <ion-input placeholder="Adresse e-mail"></ion-input>
+          <ion-button size="large" routerLink="/movies" slot="end">
+            Commencer
+            <ion-icon slot="end" size="small" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Seventh row Section: footer -->
+    <ion-row class=" footer ion-align-items-center ion-padding">
+      <ion-col size="12">
+        <p>Des questions ? Appelez le (+33) 0805-543-063</p>
+      </ion-col>
+
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>FAQ</li>
+          <li>Relations Investisseurs</li>
+          <li>Modes de lecture</li>
+          <li>Mentions légales</li>
+          <li>Informartions légales</li>
+        </ul>
+      </ion-col>
+
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>Centre d'aide</li>
+          <li>Recrutement</li>
+          <li>Condition d'utilisation</li>
+          <li>Nous contater</li>
+          <li>Seulement sur Netflix</li>
+        </ul>
+      </ion-col>
+
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>Compte</li>
+          <li>Utiliser des cartes cadeaux</li>
+          <li>Confidentialité</li>
+          <li>Test de vitesse</li>
+        </ul>
+      </ion-col>
+
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>Presse</li>
+          <li>Acheter des cartes cadeaux</li>
+          <li>Références de cookies</li>
+          <li>Garantie légale</li>
+        </ul>
       </ion-col>
     </ion-row>
   </ion-grid>
